@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AHMET ENSAR YIRTICI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/page1.css" />
+    <link rel="stylesheet" href="styles/page2.css" />
+
+    <script>
+      function show(shown, hidden) {
+        document.getElementById(shown).style.display = "block";
+        document.getElementById(hidden).style.display = "none";
+        return false;
+      }
+    </script>
+  </head>
+
+  <style>
+    body {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+    }
+    .rowSpacing {
+      height: 250px;
+    }
+    .rowSpacingSecond {
+      height: 50px;
+    }
+    #page2 {
+      display: none;
+    }
+  </style>
+
+  <body>
+    <div id="page1">
+      <div class="firstRow">
+        <div class="absoluteFirst">
+          <img src="assets/logo/logo-light.svg" alt="" />
+          <div class="col">
+            <p class="text">
+              The arts in the collection of the Modern art Gallery stardet from
+              a spark of inspration. Will these pieces inspire you? Visit us and
+              find out.
+            </p>
+            <div onclick="return show('page2','page1');" class="ourlocation">
+              <div class="left">OUR LOCATION</div>
+              <div class="right">
+                <img src="assets/logo/icon-arrow-right.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blackBox"></div>
+        <img id="desktop" src="assets/desktop/image-hero@2x.jpg" alt="" />
+        <img id="tablet" src="assets/tablet/image-hero@2x.jpg" alt="" />
+        <img id="mobile" src="assets/mobile/image-hero@2x.jpg" alt="" />
+        <div class="mobileFirstRow">
+          <img src="assets/logo/logo-dark.svg" alt="" />
+          <p class="text">
+            The arts in the collection of the Modern art Gallery stardet from a
+            spark of inspration. Will these pieces inspire you? Visit us and
+            find out.
+          </p>
+          <div onclick="return show('page2','page1');" class="ourlocation">
+            <div class="left">OUR LOCATION</div>
+            <div class="right">
+              <img src="assets/logo/icon-arrow-right.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rowSpacing"></div>
+
+      <div class="secondRow">
+        <div class="col">
+          <span class="title">YOUR DAY AT THE GALLERY</span>
+          <p class="text">
+            Wander through our distinct collections and find new insights about
+            our artist. Dive into the details of their creative process
+          </p>
+        </div>
+        <img id="desktop" src="assets/desktop/image-grid-1@2x.jpg" alt="" />
+        <img id="tablet" src="assets/tablet/image-grid-1@2x.jpg" alt="" />
+        <img id="mobile" src="assets/mobile/image-grid-1@2x.jpg" alt="" />
+      </div>
+      <div class="rowSpacingSecond"></div>
+
+      <div class="thirdRow">
+        <img id="desktop" src="assets/desktop/image-grid-2@2x.jpg" alt="" />
+        <img id="tablet" src="assets/tablet/image-grid-2@2x.jpg" alt="" />
+        <img id="mobile" src="assets/mobile/image-grid-2@2x.jpg" alt="" />
+        <div class="col">
+          <img id="desktop" src="assets/desktop/image-grid-3@2x.jpg" alt="" />
+          <img id="tablet" src="assets/tablet/image-grid-3@2x.jpg" alt="" />
+          <img id="mobile" src="assets/mobile/image-grid-3@2x.jpg" alt="" />
+          <div class="blackBox">
+            <span class="title">COME & BE IN SPIRED</span>
+            <p class="text">
+              We`re excited to welcome you to our gallery and see how our
+              collections influence you
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="rowSpacing"></div>
+
+      <div class="fourthRow">
+        <img src="assets/logo/logo-light.svg" alt="" />
+        <p class="text">
+          The modern art gallery is free to all visiters and open seven days a
+          week from 8am to 9pm. Find us at 99 King Street, Newport. USA.
+        </p>
+        <div class="icons">
+          <img src="assets/logo/icon-facebook.svg" alt="" />
+          <img src="assets/logo/icon-instagram.svg" alt="" />
+          <img src="assets/logo/icon-twitter.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /*--------------------------------------------------------------------------------------------------------------*/
+      /*--------------------------------------------------------------------------------------------------------------*/
+      /*PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2PAGE2*/
+      /*--------------------------------------------------------------------------------------------------------------*/
+      /*--------------------------------------------------------------------------------------------------------------*/
+    </script>
+
+    <div id="page2">
+      <div class="mapRow">
+        <div class="absoluteSecond">
+          <div onclick="return show('page1','page2');" class="backlocation">
+            <div class="left">
+              <img src="assets/logo/icon-arrow-left.svg" alt="" />
+            </div>
+            <div class="right">BACK TO HOME</div>
+          </div>
+        </div>
+        <img id="desktop" src="assets/desktop/image-map@2x.png" alt="" />
+        <img id="mobile" src="assets/mobile/image-map@2x.png" alt="" />
+      </div>
+
+      <div class="adressRow">
+        <div class="row">
+          <div class="title">OUR LOCATION</div>
+          <div class="adress">
+            <div class="subtitle">99 KING STREET</div>
+            <br /><br />
+            <span
+              >Newport<br />
+              RI 02840<br />
+              United States of America</span
+            >
+            <br /><br />
+            <p>
+              Our newly opened galleri is located near the Edward King House on
+              99 King Street, the Modern art gallery is free to all visitors and
+              open seven days a week from 8am to 9pm
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="socialRow">
+        <img src="assets/logo/logo-dark.svg" alt="" />
+        <p class="text">
+          The modern art gallery is free to all visiters and open seven days a
+          week from 8am to 9pm. Find us at 99 King Street, Newport. USA.
+        </p>
+        <div class="icons">
+          <img src="assets/logo/icon-facebook.svg" alt="" />
+          <img src="assets/logo/icon-instagram.svg" alt="" />
+          <img src="assets/logo/icon-twitter.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+.mapRow {
+  display: flex;
+}
+.mapRow > #desktop {
+  width: 100%;
+  height: 100%;
+}
+.absoluteSecond {
+  position: absolute;
+  left: 12%;
+}
+.absoluteSecond > .backlocation {
+  width: 250px;
+  display: flex;
+}
+
+.absoluteSecond > .backlocation:hover > .left {
+  background-color: rgb(21, 21, 21);
+}
+
+.absoluteSecond > .backlocation:hover > .right {
+  background-color: rgb(213, 150, 108);
+}
+
+.absoluteSecond > .backlocation > .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(213, 150, 108);
+  width: 75px;
+  height: 70px;
+  font-size: 20px;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+}
+
+.absoluteSecond > .backlocation > .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(21, 21, 21);
+  width: 175px;
+  height: 70px;
+  font-size: 20px;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+}
+
+.mapRow > #mobile {
+  display: none;
+}
+
+/**/
+
+.adressRow {
+  background-color: black;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.adressRow > .row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.adressRow > .row > .title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 64px;
+  width: 300px;
+  color: white;
+}
+
+.adressRow > .row > .adress {
+  font-family: "Big Shoulders Display", cursive;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.adressRow > .row > .adress > .subtitle {
+  color: rgb(213, 150, 108);
+  font-size: 48px;
+}
+
+.adressRow > .row > .adress > span {
+  color: white;
+  font-size: 20px;
+}
+.adressRow > .row > .adress > p {
+  color: white;
+  font-size: 20px;
+}
+
+/**/
+
+.socialRow {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(213, 150, 108);
+  align-items: center;
+  justify-content: space-evenly;
+  height: 400px;
+  color: black;
+}
+.socialRow > img {
+  height: 100px;
+  width: 250px;
+  user-select: none;
+}
+
+.socialRow > .text {
+  font-size: 20px;
+  width: 450px;
+}
+
+.socialRow > .icons {
+  user-select: none;
+}
+.socialRow > .icons > img {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  filter: invert(100%);
+}
+
+.socialRow > .icons > img:hover {
+  filter: none;
+}
+@media screen and (max-width: 512px) {
+  .mapRow > #desktop {
+    display: none;
+  }
+  .mapRow > #mobile {
+    display: block;
+    width: 100%;
+  }
+}

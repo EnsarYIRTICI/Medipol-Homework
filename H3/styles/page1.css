@@ -1,0 +1,356 @@
+.firstRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.firstRow > #desktop {
+  width: 800px;
+  height: 975px;
+}
+
+.firstRow > #tablet,
+.firstRow > #mobile {
+  display: none;
+}
+
+.firstRow > .blackBox {
+  width: 525px;
+  height: 975px;
+  background-color: black;
+}
+
+.absoluteFirst {
+  width: 67%;
+  height: 350px;
+  top: 200px;
+  left: 15%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.absoluteFirst > img {
+  width: 385px;
+  height: 175px;
+  mix-blend-mode: difference;
+  user-select: none;
+}
+
+.absoluteFirst > .col {
+  width: 300px;
+  height: 100%;
+  font-size: 25px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.absoluteFirst > .col > .text {
+  color: white;
+  margin-bottom: auto;
+  mix-blend-mode: difference;
+}
+
+.absoluteFirst > .col > .ourlocation {
+  width: 250px;
+  display: flex;
+}
+
+.absoluteFirst > .col > .ourlocation:hover > .left {
+  background-color: rgb(213, 150, 108);
+}
+
+.absoluteFirst > .col > .ourlocation:hover > .right {
+  background-color: rgb(21, 21, 21);
+}
+
+.absoluteFirst > .col > .ourlocation > .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(21, 21, 21);
+  width: 175px;
+  height: 70px;
+  font-size: 20px;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+}
+
+.absoluteFirst > .col > .ourlocation > .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(213, 150, 108);
+  width: 75px;
+  height: 70px;
+  font-size: 20px;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+}
+
+.mobileFirstRow {
+  align-self: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: none;
+  margin-right: auto;
+  margin-left: auto;
+  width: 67%;
+  height: 550px;
+  font-size: 25px;
+}
+
+.mobileFirstRow > .ourlocation {
+  width: 250px;
+  display: flex;
+}
+
+.mobileFirstRow > .ourlocation:hover > .left {
+  background-color: rgb(213, 150, 108);
+}
+
+.mobileFirstRow > .ourlocation:hover > .right {
+  background-color: rgb(21, 21, 21);
+}
+
+.mobileFirstRow > .ourlocation > .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(21, 21, 21);
+  width: 175px;
+  height: 70px;
+  font-size: 20px;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+}
+
+.mobileFirstRow > .ourlocation > .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(213, 150, 108);
+  width: 75px;
+  height: 70px;
+  font-size: 20px;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+}
+
+/**/
+
+.secondRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  margin-right: 15%;
+  justify-content: space-between;
+}
+.secondRow > .col {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.secondRow > .col > .title {
+  color: black;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 64px;
+}
+
+.secondRow > .col > .text {
+  font-size: 25px;
+}
+
+.secondRow > #desktop {
+  width: 800px;
+  height: 400px;
+}
+.secondRow > #tablet,
+.secondRow > #mobile {
+  display: none;
+}
+
+.thirdRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  margin-right: 15%;
+  justify-content: space-between;
+}
+
+.thirdRow > #desktop {
+  height: 725px;
+}
+
+.thirdRow > .col {
+  height: 725px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.thirdRow > .col > #desktop {
+  width: 500px;
+}
+
+.thirdRow > .col > .blackBox {
+  width: 500px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+}
+
+.thirdRow > .col > .blackBox > .title {
+  margin-left: 85px;
+  margin-right: 85px;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 64px;
+}
+
+.thirdRow > .col > .blackBox > .text {
+  margin-left: 85px;
+  margin-right: 85px;
+  font-size: 25px;
+}
+
+.thirdRow > #tablet,
+.thirdRow > #mobile,
+.thirdRow > .col > #tablet,
+.thirdRow > .col > #mobile {
+  display: none;
+}
+
+/**/
+
+.fourthRow {
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.fourthRow > img {
+  height: 100px;
+  width: 250px;
+  user-select: none;
+}
+
+.fourthRow > .text {
+  font-size: 20px;
+  width: 450px;
+}
+
+.fourthRow > .icons {
+  user-select: none;
+}
+.fourthRow > .icons > img {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.fourthRow > .icons > img:hover {
+  filter: opacity(0.5) drop-shadow(0 0 0 rgb(213, 150, 108));
+}
+@media screen and (max-width: 1408px) {
+  .absoluteFirst {
+    left: 50%;
+    width: 150px;
+  }
+  .thirdRow,
+  .secondRow {
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: space-around;
+  }
+  .thirdRow > img,
+  .thirdRow > .col > img {
+    margin-bottom: 25px;
+  }
+  .firstRow > #desktop,
+  .secondRow > #desktop,
+  .thirdRow > #desktop,
+  .thirdRow > .col > #desktop,
+  .firstRow > .blackBox {
+    display: none;
+  }
+  .firstRow > #tablet,
+  .secondRow > #tablet,
+  .thirdRow > #tablet,
+  .thirdRow > .col > #tablet {
+    display: block;
+  }
+  .firstRow > #tablet {
+    height: 750px;
+    width: 500px;
+  }
+  .secondRow > #tablet {
+    height: 300px;
+    width: 400px;
+  }
+  .thirdRow > .col,
+  .thirdRow > #tablet {
+    height: 650px;
+  }
+  .thirdRow > .col > .blackBox,
+  .thirdRow > .col > #tablet {
+    width: 350px;
+  }
+  .thirdRow > .col > .blackBox > .title {
+    font-size: 32px;
+  }
+  .thirdRow > .col > .blackBox > .text {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 512px) {
+  .firstRow > #tablet,
+  .secondRow > #tablet,
+  .thirdRow > #tablet,
+  .thirdRow > .col > #tablet {
+    display: none;
+  }
+  .firstRow > #mobile,
+  .secondRow > #mobile,
+  .thirdRow > #mobile,
+  .thirdRow > .col > #mobile {
+    display: block;
+  }
+  .firstRow > #mobile {
+    width: 100%;
+  }
+
+  .secondRow > #mobile {
+    width: 300px;
+  }
+  .thirdRow > #mobile,
+  .thirdRow > .col {
+    height: 400px;
+  }
+  .thirdRow > .col > #mobile,
+  .thirdRow > .col > .blackBox {
+    width: 300px;
+  }
+  .thirdRow > .col > .blackBox > .title {
+    font-size: 24px;
+  }
+  .thirdRow > .col > .blackBox > .text {
+    font-size: 12px;
+  }
+
+  .mobileFirstRow {
+    display: flex;
+  }
+  .absoluteFirst {
+    display: none;
+  }
+}
