@@ -1,4 +1,5 @@
 .mapRow {
+  user-select: none;
   display: flex;
 }
 .mapRow > #desktop {
@@ -55,6 +56,7 @@
 /**/
 
 .adressRow {
+  user-select: none;
   background-color: black;
   width: 100%;
   height: 800px;
@@ -80,7 +82,7 @@
   font-family: "Big Shoulders Display", cursive;
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 350px;
 }
 
 .adressRow > .row > .adress > .subtitle {
@@ -100,6 +102,7 @@
 /**/
 
 .socialRow {
+  user-select: none;
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(213, 150, 108);
@@ -119,9 +122,6 @@
   width: 450px;
 }
 
-.socialRow > .icons {
-  user-select: none;
-}
 .socialRow > .icons > img {
   margin-right: 10px;
   width: 25px;
@@ -133,6 +133,9 @@
 .socialRow > .icons > img:hover {
   filter: none;
 }
+
+/**/
+
 @media screen and (max-width: 512px) {
   .mapRow > #desktop {
     display: none;
@@ -140,5 +143,19 @@
   .mapRow > #mobile {
     display: block;
     width: 100%;
+  }
+  .adressRow > .row {
+    justify-content: flex-start;
+    padding-left: 5vw;
+  }
+  .adressRow > .row > .title {
+    margin-bottom: 50px;
+    width: 350px;
+  }
+
+  .socialRow {
+    justify-content: flex-start;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
 }
