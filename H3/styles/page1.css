@@ -5,8 +5,7 @@
 }
 
 .firstRow > #desktop {
-  width: 800px;
-  height: 975px;
+  height: 52vw;
 }
 
 .firstRow > #tablet,
@@ -15,33 +14,30 @@
 }
 
 .firstRow > .blackBox {
-  width: 525px;
-  height: 975px;
+  height: 52vw;
+  width: 30vw;
   background-color: black;
 }
 
 .absoluteFirst {
-  width: 67%;
-  height: 350px;
-  top: 200px;
-  left: 15%;
+  top: 12vw;
+  left: 15vw;
+  width: 66vw;
+  height: 20vw;
   position: absolute;
+  justify-content: space-between;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .absoluteFirst > img {
-  width: 385px;
-  height: 175px;
+  width: 25vw;
+  height: 11vw;
   mix-blend-mode: difference;
-  user-select: none;
 }
 
 .absoluteFirst > .col {
-  width: 300px;
-  height: 100%;
-  font-size: 25px;
-  margin-left: auto;
+  width: 19vw;
+  font-size: 1.3vw;
   display: flex;
   flex-direction: column;
 }
@@ -53,16 +49,7 @@
 }
 
 .absoluteFirst > .col > .ourlocation {
-  width: 250px;
   display: flex;
-}
-
-.absoluteFirst > .col > .ourlocation:hover > .left {
-  background-color: rgb(213, 150, 108);
-}
-
-.absoluteFirst > .col > .ourlocation:hover > .right {
-  background-color: rgb(21, 21, 21);
 }
 
 .absoluteFirst > .col > .ourlocation > .left {
@@ -70,11 +57,10 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(21, 21, 21);
-  width: 175px;
-  height: 70px;
-  font-size: 20px;
+  width: 10vw;
+  height: 4.5vw;
+  font-size: 1vw;
   color: white;
-  user-select: none;
   cursor: pointer;
 }
 
@@ -83,12 +69,19 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(213, 150, 108);
-  width: 75px;
-  height: 70px;
-  font-size: 20px;
+  width: 3.5vw;
+  height: 4.5vw;
+  font-size: 1vw;
   color: white;
-  user-select: none;
   cursor: pointer;
+}
+
+.absoluteFirst > .col > .ourlocation:hover > .left {
+  background-color: rgb(213, 150, 108);
+}
+
+.absoluteFirst > .col > .ourlocation:hover > .right {
+  background-color: rgb(21, 21, 21);
 }
 
 .mobileFirstRow {
@@ -148,23 +141,23 @@
   user-select: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 18%;
+  margin-right: 18%;
   justify-content: space-between;
 }
 .secondRow > .col {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 15vw;
 }
 .secondRow > .col > .title {
   color: black;
   font-family: "Big Shoulders Display", cursive;
-  font-size: 64px;
+  font-size: 3vw;
 }
 
 .secondRow > .col > .text {
-  font-size: 25px;
+  font-size: 1.3vw;
 }
 
 .secondRow > #desktop {
@@ -181,8 +174,8 @@
   user-select: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 18%;
+  margin-right: 18%;
   justify-content: space-between;
 }
 
@@ -198,12 +191,12 @@
 }
 
 .thirdRow > .col > #desktop {
-  width: 500px;
+  width: 25vw;
 }
 
 .thirdRow > .col > .blackBox {
-  width: 500px;
-  height: 350px;
+  width: 25vw;
+  height: 20vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -212,16 +205,16 @@
 }
 
 .thirdRow > .col > .blackBox > .title {
-  margin-left: 85px;
-  margin-right: 85px;
+  margin-left: 4vw;
+  margin-right: 4vw;
   font-family: "Big Shoulders Display", cursive;
-  font-size: 64px;
+  font-size: 3vw;
 }
 
 .thirdRow > .col > .blackBox > .text {
-  margin-left: 85px;
-  margin-right: 85px;
-  font-size: 25px;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  font-size: 1vw;
 }
 
 .thirdRow > #tablet,
@@ -235,52 +228,41 @@
 
 .fourthRow {
   user-select: none;
-  height: 400px;
+  width: 100%;
+  height: 20vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fourthRow > .row {
+  width: 85vw;
   display: flex;
   flex-wrap: wrap;
-  background-color: black;
-  align-items: center;
-  justify-content: space-evenly;
-  color: white;
+  justify-content: space-around;
 }
-.fourthRow > img {
-  height: 100px;
-  width: 250px;
-  user-select: none;
+.fourthRow > .row > img {
+  width: 12vw;
 }
 
-.fourthRow > .text {
-  font-size: 20px;
-  width: 450px;
+.fourthRow > .row > .text {
+  font-size: 1.02vw;
+  width: 23vw;
 }
 
-.fourthRow > .icons > img {
-  margin-right: 10px;
-  width: 25px;
-  height: 25px;
+.fourthRow > .row > .icons > img {
+  margin-right: 1vw;
+  width: 1.2vw;
   cursor: pointer;
 }
-.fourthRow > .icons > img:hover {
+.fourthRow > .row > .icons > img:hover {
   filter: opacity(0.5) drop-shadow(0 0 0 rgb(213, 150, 108));
 }
 
 /**/
 
-@media screen and (max-width: 1408px) {
-  .absoluteFirst {
-    left: 50%;
-    width: 150px;
-  }
-  .thirdRow,
-  .secondRow {
-    margin-left: 0px;
-    margin-right: 0px;
-    justify-content: space-around;
-  }
-  .thirdRow > img,
-  .thirdRow > .col > img {
-    margin-bottom: 25px;
-  }
+@media screen and (max-width: 1280px) {
   .firstRow > #desktop,
   .secondRow > #desktop,
   .thirdRow > #desktop,
@@ -294,27 +276,101 @@
   .thirdRow > .col > #tablet {
     display: block;
   }
+
   .firstRow > #tablet {
-    height: 750px;
-    width: 500px;
+    height: 90vw;
+  }
+  .absoluteFirst {
+    top: 12vw;
+    left: 50vw;
+    width: 45vw;
+    height: 65vw;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .absoluteFirst > img {
+    height: 20vw;
+    width: 45vw;
+  }
+
+  .absoluteFirst > .col {
+    height: 30vw;
+    width: 45vw;
+    justify-content: space-around;
+    font-size: 2.5vw;
+  }
+
+  .absoluteFirst > .col > .ourlocation > .left {
+    width: 20vw;
+    height: 9vw;
+    font-size: 2vw;
+  }
+
+  .absoluteFirst > .col > .ourlocation > .right {
+    width: 7vw;
+    height: 9vw;
+    font-size: 2vw;
+  }
+
+  .secondRow {
+    margin-left: 8vw;
+    margin-right: 8vw;
+    justify-content: space-between;
   }
   .secondRow > #tablet {
-    height: 300px;
-    width: 400px;
+    height: 35vw;
+  }
+  .secondRow > .col {
+    width: 25vw;
+  }
+  .secondRow > .col > .title {
+    font-size: 5vw;
+  }
+  .secondRow > .col > .text {
+    font-size: 2.1vw;
+  }
+
+  .thirdRow {
+    margin-left: 8vw;
+    margin-right: 8vw;
+    justify-content: space-between;
+  }
+  .thirdRow > .col > img {
+    margin-bottom: 3vw;
   }
   .thirdRow > .col,
   .thirdRow > #tablet {
-    height: 650px;
+    height: 70vw;
   }
   .thirdRow > .col > .blackBox,
   .thirdRow > .col > #tablet {
-    width: 350px;
+    width: 40vw;
+    height: 40vw;
   }
   .thirdRow > .col > .blackBox > .title {
-    font-size: 32px;
+    font-size: 5vw;
   }
   .thirdRow > .col > .blackBox > .text {
-    font-size: 15px;
+    font-size: 2vw;
+  }
+
+  .fourthRow {
+    height: 25vw;
+  }
+  .fourthRow > .row {
+    width: 90vw;
+  }
+  .fourthRow > .row > img {
+    width: 18vw;
+  }
+  .fourthRow > .row > .text {
+    font-size: 1.5vw;
+    width: 25vw;
+  }
+  .fourthRow > .row > .icons > img {
+    width: 2.5vw;
+    margin-right: 1vw;
   }
 }
 
@@ -338,21 +394,39 @@
   }
 
   .secondRow > #mobile {
-    width: 300px;
+    height: 80vw;
+    margin-bottom: 3vw;
   }
-  .thirdRow > #mobile,
+  .secondRow > .col {
+    width: 80vw;
+  }
+  .secondRow > .col > .title {
+    font-size: 12vw;
+  }
+  .secondRow > .col > .text {
+    font-size: 5vw;
+  }
+
+  .thirdRow > #mobile {
+    height: 120vw;
+    margin-bottom: 3vw;
+  }
   .thirdRow > .col {
-    height: 400px;
+    height: 150vw;
   }
-  .thirdRow > .col > #mobile,
+  .thirdRow > .col > #mobile {
+    width: 85vw;
+    height: 85vw;
+  }
   .thirdRow > .col > .blackBox {
-    width: 300px;
+    width: 85vw;
+    height: 100vw;
   }
   .thirdRow > .col > .blackBox > .title {
-    font-size: 24px;
+    font-size: 11vw;
   }
   .thirdRow > .col > .blackBox > .text {
-    font-size: 12px;
+    font-size: 5vw;
   }
 
   .mobileFirstRow {
@@ -363,8 +437,23 @@
   }
 
   .fourthRow {
-    justify-content: flex-start;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    height: 100vw;
+  }
+  .fourthRow > .row {
+    height: 100vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70vw;
+  }
+  .fourthRow > .row > img {
+    width: 50vw;
+  }
+  .fourthRow > .row > .text {
+    font-size: 5vw;
+    width: 60vw;
+  }
+  .fourthRow > .row > .icons > img {
+    width: 5vw;
+    margin-right: 1vw;
   }
 }
