@@ -4,9 +4,13 @@
 }
 .mapRow > #desktop {
   width: 100%;
-  height: 100%;
+  height: 35vw;
 }
 .mapRow > #mobile {
+  display: none;
+}
+
+.mapRow > #tablet {
   display: none;
 }
 
@@ -15,16 +19,7 @@
   left: 12%;
 }
 .absoluteSecond > .backlocation {
-  width: 250px;
   display: flex;
-}
-
-.absoluteSecond > .backlocation:hover > .left {
-  background-color: rgb(21, 21, 21);
-}
-
-.absoluteSecond > .backlocation:hover > .right {
-  background-color: rgb(213, 150, 108);
 }
 
 .absoluteSecond > .backlocation > .left {
@@ -32,9 +27,9 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(213, 150, 108);
-  width: 75px;
-  height: 70px;
-  font-size: 20px;
+  width: 4vw;
+  height: 3.5vw;
+  font-size: 0.7vw;
   color: white;
   user-select: none;
   cursor: pointer;
@@ -45,57 +40,63 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(21, 21, 21);
-  width: 175px;
-  height: 70px;
-  font-size: 20px;
+  width: 9vw;
+  height: 3.5vw;
+  font-size: 0.7vw;
   color: white;
   user-select: none;
   cursor: pointer;
+}
+
+.absoluteSecond > .backlocation:hover > .left {
+  background-color: rgb(21, 21, 21);
+}
+
+.absoluteSecond > .backlocation:hover > .right {
+  background-color: rgb(213, 150, 108);
 }
 
 /**/
 
 .adressRow {
   user-select: none;
-  background-color: black;
+  background-color: #151515;
   width: 100%;
-  height: 800px;
+  min-height: 30vw;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 .adressRow > .row {
+  margin-bottom: 20px;
+  margin-top: 20px;
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-
 .adressRow > .row > .title {
   font-family: "Big Shoulders Display", cursive;
-  font-size: 64px;
-  width: 300px;
+  font-size: 3.5vw;
+  width: 15vw;
   color: white;
 }
-
 .adressRow > .row > .adress {
   font-family: "Big Shoulders Display", cursive;
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 20vw;
 }
-
 .adressRow > .row > .adress > .subtitle {
   color: rgb(213, 150, 108);
-  font-size: 48px;
+  font-size: 2vw;
 }
-
 .adressRow > .row > .adress > span {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
 }
 .adressRow > .row > .adress > p {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 /**/
@@ -103,53 +104,112 @@
 .socialRow {
   user-select: none;
   width: 100%;
-  height: 20vw;
+  min-height: 12vw;
   background-color: rgb(213, 150, 108);
   color: black;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 .socialRow > .row {
-  width: 85vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .socialRow > .row > img {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 5vw;
   width: 12vw;
 }
-
 .socialRow > .row > .text {
-  font-size: 1.02vw;
+  font-size: 20px;
   width: 23vw;
 }
-
 .socialRow > .row > .icons > img {
+  margin-bottom: 20px;
+  margin-top: 20px;
   margin-right: 1vw;
   width: 1.2vw;
   cursor: pointer;
   filter: invert(100%);
 }
-
 .socialRow > .row > .icons > img:hover {
   filter: none;
 }
 
-/**/
+/****/
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
+  .mapRow > #desktop {
+    display: none;
+  }
+  .mapRow > #tablet {
+    display: block;
+    width: 100%;
+    height: 60vw;
+  }
+  .mapRow > #desktop {
+    width: 100%;
+    height: 65vw;
+  }
+
+  /**/
+
+  .absoluteSecond {
+    left: 6%;
+  }
+  .absoluteSecond > .backlocation > .left {
+    width: 8vw;
+    height: 7vw;
+    font-size: 1.5vw;
+  }
+
+  .absoluteSecond > .backlocation > .right {
+    width: 18vw;
+    height: 7vw;
+    font-size: 1.5vw;
+  }
+
+  /**/
+
+  .adressRow {
+    min-height: 70vw;
+  }
+  .adressRow > .row > .title {
+    font-size: 6vw;
+    width: 15vw;
+  }
+  .adressRow > .row > .adress {
+    width: 25vw;
+  }
+  .adressRow > .row > .adress > .subtitle {
+    font-size: 3.5vw;
+  }
+
+  .adressRow > .row > .adress > span {
+    font-size: 20px;
+  }
+  .adressRow > .row > .adress > p {
+    font-size: 20px;
+  }
+
+  /**/
+
   .socialRow {
-    height: 25vw;
+    min-height: 40vw;
+    align-items: center;
   }
   .socialRow > .row {
     width: 90vw;
   }
   .socialRow > .row > img {
+    height: 10vw;
     width: 18vw;
   }
   .socialRow > .row > .text {
-    font-size: 1.5vw;
+    font-size: 20px;
     width: 25vw;
   }
   .socialRow > .row > .icons > img {
@@ -161,42 +221,76 @@
 /**/
 
 @media screen and (max-width: 512px) {
-  .mapRow > #desktop {
+  .mapRow > #tablet {
     display: none;
   }
   .mapRow > #mobile {
     display: block;
     width: 100%;
+    height: 120vw;
   }
+
+  /**/
 
   .absoluteSecond {
     left: 0%;
   }
+  .absoluteSecond > .backlocation > .left {
+    width: 16vw;
+    height: 14vw;
+    font-size: 3vw;
+  }
+
+  .absoluteSecond > .backlocation > .right {
+    width: 36vw;
+    height: 14vw;
+    font-size: 3vw;
+  }
+
+  /**/
 
   .adressRow {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 120vw;
   }
   .adressRow > .row {
-    width: 87%;
+    width: 65vw;
     flex-direction: column;
   }
   .adressRow > .row > .title {
-    margin-bottom: 50px;
-    width: 350px;
+    font-size: 12vw;
+    width: 60vw;
+    margin-bottom: 5vw;
   }
+  .adressRow > .row > .adress {
+    width: 45vw;
+  }
+  .adressRow > .row > .adress > .subtitle {
+    font-size: 7vw;
+  }
+  .adressRow > .row > .adress > span {
+    font-size: 3.3vw;
+  }
+  .adressRow > .row > .adress > p {
+    font-size: 3.3vw;
+  }
+
+  /**/
 
   .socialRow {
     height: 100vw;
+    align-items: center;
   }
   .socialRow > .row {
     height: 100vw;
+    width: 70vw;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 70vw;
   }
   .socialRow > .row > img {
+    height: 20vw;
     width: 50vw;
   }
   .socialRow > .row > .text {

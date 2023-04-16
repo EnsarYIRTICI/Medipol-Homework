@@ -19,6 +19,7 @@
 
     <script>
       function show(shown, hidden) {
+        window.scrollTo(0, 0);
         document.getElementById(shown).style.display = "block";
         document.getElementById(hidden).style.display = "none";
         return false;
@@ -42,6 +43,11 @@
     }
     #page2 {
       display: none;
+    }
+    @media screen and (max-width: 512px) {
+      .rowSpacing {
+        height: 20vw;
+      }
     }
   </style>
 
@@ -153,6 +159,7 @@
           </div>
         </div>
         <img id="desktop" src="assets/desktop/image-map@2x.png" alt="" />
+        <img id="tablet" src="assets/desktop/image-map@2x.png" alt="" />
         <img id="mobile" src="assets/mobile/image-map@2x.png" alt="" />
       </div>
 
